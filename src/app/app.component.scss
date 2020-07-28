@@ -1,0 +1,30 @@
+h1 {
+  color: white;
+  font-size: 3rem;
+  max-width: 10ch;
+  position: relative;
+  padding: 0 1rem;
+  background: #730a13;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    width: calc(100% + 2rem);
+    height: 100%;
+    background: #730a13;
+    opacity: 0.6;
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: -1rem;
+    top: 0.5rem;
+    width: calc(100% + 2rem);
+    height: 100%;
+    border: 5px dashed #3d593c;
+    z-index: -2;
+  }
+}

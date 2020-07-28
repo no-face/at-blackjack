@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+$wine: #59070e;
+$berry: #730a13;
+$sage: #3d593c;
+$eucalyptus: #22400c;
+$dustyrose: #bf8d7a;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: lighten($dustyrose, 25%);
+  color: $wine;
+  font-family: 'Open Sans';
+  line-height: 1.5;
+  padding: 0 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'EB Garamond';
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
