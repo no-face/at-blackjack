@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  margin: 2rem 3.5rem;
+}
+
+ul {
+  display: flex;
+
+  li + li {
+    margin-left: 1rem;
+  }
+}
+
+
