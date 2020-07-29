@@ -1,10 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-
-$wine: #59070e;
-$berry: #730a13;
-$sage: #3d593c;
-$eucalyptus: #22400c;
-$dustyrose: #bf8d7a;
+@import "./styles/variables";
 
 * {
   box-sizing: border-box;
@@ -25,10 +19,6 @@ h4,
 h5,
 h6 {
   font-family: 'EB Garamond';
-}
-
-.uppercase {
-  text-transform: uppercase;
 }
 
 ul {

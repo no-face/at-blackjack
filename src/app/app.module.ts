@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { CardComponent } from '../card/card.component';
 import { GameService } from '../services/game.service';
 import { HandComponent } from '../hand/hand.component';
+import { LogoComponent } from '../logo/logo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    HandComponent
+    HandComponent,
+    LogoComponent
   ],
   imports: [
     BrowserModule
