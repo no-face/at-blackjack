@@ -1,0 +1,39 @@
+:host {
+  display: block;
+  width: 200px;
+  background: white;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.wrapper {
+  position: relative;
+  height: 300px;
+  padding: 1rem;
+  text-align: center;
+  margin: auto 0;
+}
+
+span {
+  display: flex;
+  height: inherit;
+  max-height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+}
+
+.upper-symbol,
+.lower-symbol {
+  position: absolute;
+}
+
+.upper-symbol {
+  top: 5px;
+  left: 10px;
+}
+
+.lower-symbol {
+  bottom: 5px;
+  right: 10px;
+}
