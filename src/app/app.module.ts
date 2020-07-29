@@ -2,10 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { CardComponent } from '../card/card.component';
+import { CardComponent, HandComponent, LogoComponent } from '../components';
+
 import { GameService } from '../services/game.service';
-import { HandComponent } from '../hand/hand.component';
-import { LogoComponent } from '../logo/logo.component';
 
 @NgModule({
   declarations: [

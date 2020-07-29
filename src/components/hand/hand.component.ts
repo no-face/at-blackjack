@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { Card } from '../services/helpers';
-import { GameService } from '../services/game.service';
+import { Card } from '../../services/helpers';
+import { GameService } from '../../services/game.service';
 
 @Component({
   selector: 'app-hand',
