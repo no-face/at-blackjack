@@ -1,6 +1,6 @@
 type Suit = 'hearts' | 'diamonds' | 'spades' | 'clubs';
 
-interface Card {
+export interface Card {
   value: number;
   alternateValue?: number;
   textRepresentation: string;
@@ -24,8 +24,9 @@ const faces: Array<Partial<Card>> = [
   { value: 1, alternateValue: 11, textRepresentation: 'A' }
 ];
 
-const deck: Array<Card> = faces.reduce(
-  (partialDeck: Array<Card>, currentFace: Partial<Card>) => partialDeck.concat(suits.map((suit: Suit) => ({...currentFace, suit}) as Card)),
+export const deck: Array<Card> = faces.reduce(
+  (partialDeck: Array<Card>, currentFace: Partial<Card>) => partialDeck
+    .concat(suits.map((suit: Suit) => ({ ...currentFace, suit }) as Card)),
   []
 );
 
