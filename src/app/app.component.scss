@@ -1,3 +1,22 @@
+:host {
+  display: block;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  flex: 1 0 15vw;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
+  flex: 0 1 999vw;
+}
+
 .logo {
   position: relative;
   display: inline-block;
@@ -6,7 +25,7 @@
 .heart-wrapper {
   position: absolute;
   top: 10ch;
-  right: 9ch;
+  left: 16ch;
   opacity: 0.8;
 }
 
@@ -64,5 +83,38 @@ h1 {
     height: 100%;
     border: 5px dashed #3d593c;
     z-index: -2;
+  }
+}
+
+.controls {
+  margin-top: 1rem;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  text-transform: uppercase;
+  color: #730a13;
+  font-family: 'EB Garamond';
+  line-height: 1.5;
+  font-size: 1.25rem;
+  background: transparent;
+  font-weight: bold;
+  padding: 1rem;
+  border-bottom: 2px dashed #730a13;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    &::after {
+      position: absolute;
+      content: '';
+      background: #730a13;
+      height: 25%;
+      width: 100%;
+      left: 0;
+      bottom: 25%;
+      opacity: 0.3;
+    }
   }
 }

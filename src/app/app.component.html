@@ -1,9 +1,18 @@
-<div class="logo">
-  <h1 class="uppercase">Let's Play Games</h1>
-  <div class="heart-wrapper">
-    <i class="heart"></i>
+<div class="container">
+  <div class="sidebar">
+      <div class="logo">
+        <h1 class="uppercase">Let's Play Games</h1>
+        <div class="heart-wrapper">
+          <i class="heart"></i>
+        </div>
+      </div>
+      <div class="controls">
+        <button (click)="startGame()">Start</button>
+      </div>
+  </div>
+  <div class="content">
+    <app-hand [hand]="playerHand$ | async" player="player"></app-hand>
+    <app-hand [hand]="dealerHand$ | async" player="dealer"></app-hand>
   </div>
 </div>
 
-<!-- <app-card [card]="card">
-</app-card> -->
