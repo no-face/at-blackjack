@@ -3,3 +3,7 @@
     <app-card [card]="card"></app-card>
   </li>
 </ul>
+<ng-container *ngIf="player !== 'dealer'">
+  <button (click)="hit()">Hit</button>
+  <button (click)="stand()">Stand</button>
+</ng-container>
